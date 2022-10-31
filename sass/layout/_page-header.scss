@@ -1,0 +1,80 @@
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-navigation {
+    display: flex;
+    column-gap: 93px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+}
+
+.menu__link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color var(--transition-dur-and-func);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.menu__link_current {
+    color: var(--accent-color);
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+        bottom: -1px;
+        left: 0;
+    }
+}
+
+.header-contacts {
+    display: flex;
+    column-gap: 30px;
+}
+
+.header-contacts__link {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    fill: var(--secondary-text-color);
+    transition: color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+        }
+}

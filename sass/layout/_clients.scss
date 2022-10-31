@@ -1,0 +1,28 @@
+.clients-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.clients-list__item {
+    height: 92px;
+    width: calc((100% - 150px) / 6);
+}
+
+.clients-list__link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+    transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        fill: var(--accent-color);
+        }
+}
