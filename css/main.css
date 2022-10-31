@@ -480,7 +480,7 @@ img {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.features-list__icon {
+.features-list__icon-box {
   display: flex;
   height: 120px;
   background-color: var(--secondary-bg-color);
