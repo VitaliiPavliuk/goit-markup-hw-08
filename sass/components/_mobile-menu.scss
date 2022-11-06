@@ -44,6 +44,16 @@
         background-color: transparent;
         padding: 0;
         line-height: 0;
+        cursor: pointer;
+    }
+
+    .mobile-menu__close-icon {
+        transition: fill var(--transition-dur-and-func);
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
     }
 
     .mobile-menu__nav-list {

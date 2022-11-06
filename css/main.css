@@ -172,6 +172,13 @@ img {
     background-color: transparent;
     padding: 0;
     line-height: 0;
+    cursor: pointer;
+  }
+  .mobile-menu__close-icon {
+    transition: fill var(--transition-dur-and-func);
+  }
+  .mobile-menu__close-icon:hover, .mobile-menu__close-icon:focus {
+    fill: var(--accent-color);
   }
   .mobile-menu__nav-list {
     display: flex;
@@ -543,6 +550,13 @@ img {
     background-color: transparent;
     padding: 0;
     line-height: 0;
+    cursor: pointer;
+  }
+  .mobile-menu-btn__icon {
+    transition: fill var(--transition-dur-and-func);
+  }
+  .mobile-menu-btn__icon:hover, .mobile-menu-btn__icon:focus {
+    fill: var(--accent-color);
   }
 }
 .page-header {

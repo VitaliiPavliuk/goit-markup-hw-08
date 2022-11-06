@@ -12,6 +12,16 @@
         background-color: transparent;
         padding: 0;
         line-height: 0;
+        cursor: pointer;
+    }
+
+    .mobile-menu-btn__icon {
+        transition: fill var(--transition-dur-and-func);
+        
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
     }
 }
 
