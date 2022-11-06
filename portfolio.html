@@ -33,15 +33,15 @@
     
             <ul class="header-contacts list">
                 <li><a href="mailto:info@devstudio.com" class="header-contacts__link">
-                    <svg class="header-contacts__icon-mail">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com</a></li>
+                        <svg class="header-contacts__icon-mail">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a></li>
                 <li><a href="tel:+380961111111" class="header-contacts__link">
-                    <svg class="header-contacts__icon-tel">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a></li>
+                        <svg class="header-contacts__icon-tel">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a></li>
             </ul>
         </div>
         <div class="mobile-menu" data-menu>
@@ -51,22 +51,51 @@
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                <ul class="mobile-menu__nav-list list">
+                    <li>
+                        <a href="./index.html" class="mobile-menu__nav-link">Студія</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="mobile-menu__nav-link mobile-menu__nav-link_current">Портфоліо</a>
+                    </li>
+                    <li>
+                        <a href="" class="mobile-menu__nav-link">Контакти</a>
+                    </li>
                 </ul>
+                <div>
+                    <ul class="mobile-menu__contacts-list list">
+                        <li>
+                            <a href="tel:+380961111111" class="mobile-menu__contacts-tel">+38 096 111 11 11</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-mail">info@devstudio.com</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="mobile-menu__social-list list">
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link">Instagram</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
     
     <main>
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h1 class="visually-hidden">Портфоліо</h1>
                 
-    <!-- filters -->
                 <ul class="filters-list list">
                     <li>
                         <button type="button" class="filters-list__btn">Усі</button>
@@ -85,7 +114,6 @@
                     </li>
                 </ul>
                 
-    <!-- portfolio -->
                 <ul class="projects-list list">
                     <li class="projects-list__item">
                         <a href="" class="projects-list__link">
@@ -215,11 +243,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
     
     <!-- footer -->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
         <div class="container page-footer__container">
             <div class="page-footer__address-container">
                 <a href="./index.html" lang="en" class="logo page-footer__logo"> <span
@@ -281,7 +309,9 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>
