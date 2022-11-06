@@ -6,11 +6,21 @@
 
 .page-footer__container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.page-footer__address-and-social {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .page-footer__address-container {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .page-footer__logo {
@@ -19,8 +29,14 @@
     margin-bottom: 20px;
 }
 
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer-contacts__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .footer-contacts__link {
@@ -43,7 +59,9 @@
 }
 
 .page-footer__social-container {
-    margin-right: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .page-footer__text {
@@ -54,16 +72,20 @@
     text-transform: uppercase;
     color: var(--white-text-color);
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .footer-form {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .footer-form__input {
     height: 50px;
-    width: 358px;
+    width: 450px;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -84,5 +106,57 @@
 .footer-form__btn {
     padding: 10px 28px;
     min-width: 200px;
-    gap: 10px;
+    gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .page-footer__address-and-social {
+        gap: 165px;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-footer__container {
+        flex-direction: row;
+        align-items: baseline;
+        gap: 0;
+    }
+    .page-footer__address-and-social {
+        gap: 0;
+        flex-grow: 1;
+        align-items: baseline;
+    }
+    .page-footer__address-container {
+        flex-grow: 1;
+        align-items: flex-start;
+    }
+    .footer-contacts__item {
+        margin-bottom: 9px;
+    }
+    .page-footer__social-container {
+        align-items: flex-start;
+        margin-right: 93px;
+    }
+    .footer-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .page-footer__text {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: start;
+    }
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    }
+    .footer-form__input {
+        width: 358px;
+    }
+    .footer-form__btn {
+        gap: 10px;
+    }
 }

@@ -6,7 +6,7 @@
 
 .clients-list__item {
     height: 92px;
-    width: calc((100% - 150px) / 6);
+    width: calc((100% - 30px) / 2);
 }
 
 .clients-list__link {
@@ -25,4 +25,16 @@
         border-color: var(--accent-color);
         fill: var(--accent-color);
         }
+}
+
+@media screen and (min-width: 768px) {
+    .clients-list__item {
+        width: calc((100% - 60px) / 3);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .clients-list__item {
+        width: calc((100% - 150px) / 6);
+    }
 }
