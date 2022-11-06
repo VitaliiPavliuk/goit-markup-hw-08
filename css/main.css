@@ -215,6 +215,7 @@ img {
     display: flex;
     gap: 20px;
     align-items: center;
+    flex-wrap: wrap;
   }
   .mobile-menu__social-item {
     position: relative;
@@ -696,7 +697,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 360px;
+  max-width: 360px;
 }
 
 @media screen and (max-width: 767px) {
@@ -730,7 +731,7 @@ img {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
-    width: 696px;
+    max-width: 696px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
@@ -987,15 +988,22 @@ img {
   text-align: center;
 }
 
+.footer-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .footer-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .footer-form__input {
   height: 50px;
-  width: 450px;
+  width: 100%;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1022,6 +1030,12 @@ img {
   .page-footer__address-and-social {
     gap: 165px;
     flex-direction: row;
+  }
+  .footer-form {
+    align-items: center;
+  }
+  .footer-form__input {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1055,6 +1069,9 @@ img {
     margin-left: 0;
     margin-right: 0;
     text-align: start;
+  }
+  .footer-form-container {
+    width: 570px;
   }
   .footer-form {
     display: flex;

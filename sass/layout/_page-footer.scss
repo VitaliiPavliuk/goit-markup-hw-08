@@ -77,15 +77,22 @@
     text-align: center;
 }
 
+.footer-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .footer-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 .footer-form__input {
     height: 50px;
-    width: 450px;
+    width: 100%;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -113,6 +120,12 @@
     .page-footer__address-and-social {
         gap: 165px;
         flex-direction: row;
+    }
+    .footer-form {
+        align-items: center;
+    }
+    .footer-form__input {
+        width: 450px;
     }
 }
 
@@ -147,6 +160,9 @@
         margin-left: 0;
         margin-right: 0;
         text-align: start;
+    }
+    .footer-form-container {
+        width: 570px;
     }
     .footer-form {
         display: flex;
